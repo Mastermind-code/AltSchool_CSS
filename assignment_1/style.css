@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background-color: black;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Main Container */
+#essayContainer {
+  width: 888px;
+  height: 468px;
+  background-color: #fff;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #202020;
+  border-bottom: 16px solid #fff;
+}
+
+/* Essay Card */
+.essayCard {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 30px 0 0 16px;
+}
+
+/* Title Box Component */
+.titleBox {
+  position: absolute;
+  top: -25px;
+  left: 40px;
+  padding: 22px 80px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+  background-color: #ed288b;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.essayTitle {
+  margin: 0;
+}
+
+.essayText {
+  padding: 95px 35px 15px 40px;
+}
+
+.essayText p {
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-size: 1.03rem;
+}
