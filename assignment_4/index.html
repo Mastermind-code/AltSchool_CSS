@@ -3,34 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 4 | Wellness Program</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Wellness Program Registration</title>
   </head>
 
   <body>
-    <main>
-      <header>
-        <div class="logo">
+    <main class="page-wrapper">
+      <header class="page-header">
+        <div class="brand-logo">
           <img src="./assets/Logo.svg" alt="Wellness Program Logo" />
         </div>
 
         <h1>For Individuals</h1>
 
-        <div class="description_div">
-          <p class="description">
+        <div class="header-content">
+          <p class="content-text">
             Start benefiting from the wellness experience. For companies looking
             on increasing productivity, and improving organization wellness.
           </p>
-          <p class="description">
+          <p class="content-text">
             Inspiring wholesome harmony for the mind, body and spirit, for
             everyone, everywhere.
           </p>
         </div>
       </header>
+
+      <section class="registration-container">
+        <form action="#" method="post">
+          <div class="registration-grid">
+            <div class="input-group">
+              <label for="user-firstname" class="input-label">First Name</label>
+              <input
+                class="input-field"
+                type="text"
+                id="user-firstname"
+                name="user-firstname"
+                placeholder="Chiagoziem"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="user-lastname" class="input-label">Last Name</label>
+              <input
+                class="input-field"
+                type="text"
+                id="user-lastname"
+                name="user-lastname"
+                placeholder="El-gibbor"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="user-gender" class="input-label">Gender</label>
+              <div class="dropdown-wrapper">
+                <select
+                  class="dropdown-field"
+                  id="user-gender"
+                  name="user-gender"
+                  required
+                >
+                  <option value="" disabled selected hidden>Select here</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="user-birthdate" class="input-label"
+                >Date of Birth</label
+              >
+              <input
+                class="input-field date-input"
+                type="date"
+                id="user-birthdate"
+                name="user-birthdate"
+                placeholder="Select here"
+                data-placeholder="Select here"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="user-weight" class="input-label">Weight (KG)</label>
+              <input
+                class="input-field"
+                type="number"
+                id="user-weight"
+                name="user-weight"
+                placeholder="Enter weight"
+                min="0"
+                step="0.1"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="user-height" class="input-label">Height (CM)</label>
+              <input
+                class="input-field"
+                type="number"
+                id="user-height"
+                name="user-height"
+                placeholder="Enter height here"
+                min="0"
+                step="0.1"
+                required
+              />
+            </div>
+
+            <div class="input-group full-width">
+              <label for="user-activity" class="input-label"
+                >Activity Level</label
+              >
+              <div class="dropdown-wrapper">
+                <select
+                  class="dropdown-field"
+                  id="user-activity"
+                  name="user-activity"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected hidden>Select here</option>
+                  <option value="activity1">Activity One</option>
+                  <option value="activity2">Activity Two</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-group full-width">
+              <label for="user-password" class="input-label">Password</label>
+              <input
+                class="input-field"
+                type="password"
+                id="user-password"
+                name="user-password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least 8 characters, one uppercase letter, one lowercase letter, and a number"
+                required
+              />
+            </div>
+
+            <button class="submit-button full-width" type="submit">
+              Register
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
 
-    <footer>
-      <p class="form__footer">
+    <footer class="page-footer">
+      <p class="footer-text">
         By clicking Register, you agree to our
         <a href="#">Terms of Use</a> and our
         <a href="#">Privacy Policy</a>
