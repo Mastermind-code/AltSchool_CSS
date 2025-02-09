@@ -39,8 +39,6 @@
   text-decoration: none;
 }
 
-/* Rest of the previous styles remain the same */
-
 @media (max-width: 768px) {
   .nav-menu {
     gap: 1rem;
@@ -53,7 +51,7 @@
   }
 
   .nav-menu {
-    display: none; /* Consider adding a mobile menu toggle for smaller screens */
+    display: none;
   }
 }
 
